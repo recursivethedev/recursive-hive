@@ -1,0 +1,50 @@
+// Imports ---------------------------------------------- /
+@import "../../styles/mixins";
+
+// Base ------------------------------------------------- /
+.base {
+  // border: 1px dashed pink;
+  display: flex;
+  height: 64px;
+  justify-content: center;
+  margin: 32px 0;
+  width: 100%;
+}
+
+.wrapper {
+  // border: 1px dashed pink;
+  align-items: center;
+  display: flex;
+  margin: 0 var(--global-margins);
+  width: var(--global-width);
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.links {
+  // border: 1px dashed pink;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  align-items: center;
+}
+
+.link {
+  // border: 1px dashed pink;
+  color: #82b4ff;
+  padding: 8px;
+}
+
+.link:not(:first-child) {
+  margin-left: 32px;
+}
+
+.mode {
+  @include btn-reset;
+  margin-left: 48px;
+}

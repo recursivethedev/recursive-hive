@@ -1,0 +1,38 @@
+.muteButton {
+  margin: 0;
+  margin-left: 2px;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.muteButtonIcon {
+  width: 24px;
+  opacity: 1;
+}
+
+.playerBlurredLights {
+  position: absolute;
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+  background-image: conic-gradient(yellow, red);
+  filter: blur(7px);
+  animation: color-shift 5s linear infinite;
+}
+
+@keyframes color-shift {
+  100% {
+    filter: blur(7px) hue-rotate(360deg);
+  }
+}

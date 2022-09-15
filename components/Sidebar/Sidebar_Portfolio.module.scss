@@ -1,0 +1,151 @@
+.center {
+  max-width: 100vw;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.center__wrapper {
+  display: flex;
+  gap: 4vw;
+  margin: 0 var(--global-margins);
+  width: var(--global-width);
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+// .sidebar__wrapper {
+
+// }
+
+.column {
+  display: flex;
+}
+
+.block__wrapper_half {
+  width: 50%;
+  padding: 0 1rem 2rem 1rem;
+  max-width: 100%;
+}
+
+.block__wrapper_full {
+  width: 100%;
+  padding: 0 1rem 2rem 1rem;
+  max-width: 100%;
+}
+
+.base___active {
+  // border: 1px dashed yellow;
+  display: block !important;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(55px);
+  background-color: rgba(60, 60, 60, 0.05);
+  padding-top: 64px;
+}
+
+.close {
+  // border: 1px dashed yellow;
+  display: none;
+  position: absolute;
+  top: 32px;
+  right: 32px;
+}
+
+.heading {
+  color: #44485f;
+  font-size: 10px;
+  font-weight: 700;
+  margin-bottom: 48px;
+  text-transform: uppercase;
+}
+
+.link {
+  // border: 1px dashed yellow;
+  align-items: center;
+  color: #636886;
+  display: flex;
+  margin-bottom: 48px;
+  user-select: none;
+  width: fit-content;
+}
+
+.link.active {
+  // border: 1px dashed yellow;
+  color: #ffb629;
+}
+
+.link svg {
+  height: 22px;
+  margin-right: 24px;
+  width: 22px;
+}
+
+.link span {
+  font-size: 12px;
+  font-weight: 700;
+  // text-transform: uppercase;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.link.active div {
+  // border: 1px dashed yellow;
+  background-color: #ffb629;
+  border-radius: 14px;
+  height: 44px;
+  left: -6px;
+  pointer-events: none;
+  position: absolute;
+  width: 12px;
+}
+
+// Pages
+.page {
+  background: radial-gradient(
+      74.03% 74.03% at 57.32% 14.12%,
+      #3c4069 0%,
+      #101119 100%
+    ),
+    #101119;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+.page__portfolio {
+  background: url(/assets/images/bg-portfolio-min.png);
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+  .sidebar__wrapper {
+    width: 0;
+  }
+  .main {
+    width: 100%;
+  }
+  .column {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .block__wrapper_half {
+    width: 100%;
+  }
+}

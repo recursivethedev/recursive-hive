@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&display=swap');
+
+.ui {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  width: 90%;
+  max-width: 400px;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: opacity 0.125s linear;
+}
+
+.connectButton {
+  padding: 20px 25px;
+  width: 100%;
+  border: none;
+  border-radius: 10px 10px 0 0;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  white-space: pre;
+  font-size: 15px;
+}
+
+.hintWrapper {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0 0 10px 10px;
+  backdrop-filter: blur(5px);
+  width: 100%;
+}
+
+.hint {
+  margin: 0;
+  padding: 10px 25px;
+  background-image: linear-gradient(to right, #ffdc7a, #ff94e2);
+  background-clip: text;
+  color: transparent;
+  animation: 3.5s shift linear infinite;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+}
+
+@keyframes shift {
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.infoWrapper {
+  display: flex;
+  justify-content: space-around;
+}
+
+.divider {
+  width: 2px;
+  height: 22px;
+  background: white;
+  opacity: 0.25;
+}
+
+.claimWrapper {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  pointer-events: auto;
+  cursor: pointer;
+  overflow: hidden;
+  pointer-events: none;
+  background: transparent;
+}
+
+.claimWrapperBackground {
+  margin: 0;
+  padding: 0;
+  height: 40px;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 10px;
+  width: 40px;
+  pointer-events: auto;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  transition: 0.5s ease-in-out;
+  z-index: -1;
+}
+
+.claimIcon {
+  height: calc(100% - 8px);
+  margin-left: 4px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.claimIconBlur {
+  position: absolute;
+  left: 0;
+  height: calc(100% - 8px);
+  transform: scale(3);
+  filter: blur(10px);
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.claimChevron {
+  height: 40%;
+  margin-bottom: auto;
+  margin-top: auto;
+  margin-left: 4px;
+  opacity: 0.75;
+  opacity: 0;
+  transition: 0.5s ease-in-out;
+}
+
+.claimBalance {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  width: 75%;
+  height: calc(100% - 8px);
+  margin: auto;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+
+.claimButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: #fff;
+  width: 100%;
+  background: rgba(40, 117, 255, 1);
+  height: calc(100% - 8px);
+  margin: auto;
+  margin-right: 4px;
+  margin-left: 4px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.celebrationVideo {
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  width: 100vw;
+  height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.bottomText {
+  color: #fff;
+  text-align: center;
+  margin-top: 9px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .celebrationVideo {
+    height: 100vh;
+    width: auto;
+  }
+}

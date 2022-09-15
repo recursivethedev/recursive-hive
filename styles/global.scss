@@ -1,0 +1,122 @@
+// ====================================================== /
+// Global
+// ====================================================== /
+
+// Tailwind  -------------------------------------------- /
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// Imports ---------------------------------------------- /
+@import "normalize";
+@import "theme";
+@import "colors";
+@import "react-toastify/dist/ReactToastify.min.css";
+
+// Root ------------------------------------------------- /
+:root {
+  @include colors;
+  @include mauveA;
+  @include crimsonA;
+
+  // Layout
+  --global-margins: 20px;
+  --global-width: 1320px;
+
+  // Font
+  --font-sans: "Poppins", -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  // Time
+  --transition-time: 200ms;
+
+  // UI
+  --active-opacity: 0.64;
+
+  // Theme
+  --link-anchor-color: var(--crimson11);
+}
+
+.recharts-text {
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.recharts-legend-item-text {
+  color: #72799b;
+  font-family: var(--font-sans);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.recharts-wrapper .recharts-cartesian-grid-horizontal line:nth-last-child(1),
+.recharts-wrapper .recharts-cartesian-grid-vertical line:nth-last-child(1),
+.recharts-wrapper .recharts-cartesian-grid-vertical line:nth-last-child(2) {
+  stroke-opacity: 0;
+}
+
+.recharts__barChart .recharts-xAxis .recharts-text {
+  fill: #ffffff;
+}
+
+#WEB3_CONNECT_MODAL_ID > div {
+  z-index: 100;
+}
+
+body {
+  background: radial-gradient(
+      74.03% 74.03% at 57.32% 14.12%,
+      #3c4069 0%,
+      #101119 100%
+    ),
+    #101119, url(/assets/images/bg-home.png);
+  // background: url(/assets/images/bg-home.png);
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.message-panel {
+  background: linear-gradient(184deg, rgba(148, 175, 247, 0.07) 3.27%, rgba(148, 175, 247, 0) 158.71%);
+  box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.05);
+  backdrop-filter: blur(25px);
+  border-radius: 20px;
+}
+
+.Toastify__toast-theme--dark {
+  --toastify-color-dark: #1f2133;
+  --toastify-color-progress-dark: var(--hive-yellow);
+}
+
+.bg-gradient {
+  background: linear-gradient(184deg, rgba(148, 175, 247, 0.15) 3.27%, rgba(170, 192, 252, 0) 158.71%);
+  backdrop-filter: blur(120px);
+}
+
+.bg-gradient-light {
+  background: linear-gradient(184deg, rgba(148, 175, 247, 0.07) 3.27%, rgba(148, 175, 247, 0) 158.71%);
+  backdrop-filter: blur(25px);
+}
+
+.scroller::-webkit-scrollbar {
+  width: 6px;
+}
+
+.scroller::-webkit-scrollbar-track {
+  background-color: #72799B;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.scroller::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #82B4FF; 
+}
+
+
+
+
+
+

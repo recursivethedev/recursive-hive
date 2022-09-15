@@ -1,0 +1,111 @@
+// ====================================================== /
+// Theme
+// ====================================================== /
+
+// Headings --------------------------------------------- /
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--mauve12);
+}
+
+h1 {
+  font-weight: 800;
+}
+
+h2 {
+  font-weight: 600;
+}
+
+h3 {
+  font-weight: 600;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 600;
+}
+
+h6 {
+  font-weight: 600;
+}
+
+// Text ------------------------------------------------- /
+p {
+  color: var(--mauve11);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+b {
+  font-weight: 500;
+}
+
+// Font ------------------------------------------------- /
+body {
+  font-family: var(--font-sans);
+  font-feature-settings: "calt";
+}
+
+button {
+  font-family: var(--font-sans);
+  font-weight: 500;
+}
+
+input,
+textarea {
+  font-family: var(--font-sans);
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+// Opinions --------------------------------------------- /
+body {
+  background-color: #101119;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+textarea {
+  resize: vertical;
+}
+
+// #root {
+//   background: radial-gradient(
+//       74.03% 74.03% at 57.32% 14.12%,
+//       #3c4069 0%,
+//       #101119 100%
+//     ),
+//     #101119;
+//   background-position: top center;
+//   background-repeat: no-repeat;
+//   background-attachment: fixed;
+//   background-size: cover;
+// }
+
+// #subroot {
+//   background-position: 50% 0px;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background: url(../public/assets/images/bg.svg);
+//   display: flex;
+//   flex-direction: column;
+//   background-attachment: fixed;
+// }
